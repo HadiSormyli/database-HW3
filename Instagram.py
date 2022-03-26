@@ -9,7 +9,7 @@ class Instagram(SocialMedia):
 		return self.posts
 
 	def publishNewPost(self,body):
-		if(len(body) <= 2):
+		if(len(body) <= 2200):
 			self.posts.append(body)
 			return True
 		else:
